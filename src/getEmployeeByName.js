@@ -8,4 +8,5 @@ const getEmployeeByName = (employeeName) => {
     || employee.lastName === employeeName);
   return result;
 };
+
 module.exports = getEmployeeByName;
