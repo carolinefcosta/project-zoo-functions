@@ -7,13 +7,11 @@ const countAnimals = (animal) => {
       return acc;
     }, {});
   }
-  const { residents } = species.find(({ name }) => name === animal.specie);
+  const result = species.find(({ name }) => name === animal.species);
   if (animal.sex) {
-    return residents.filter(({ sex }) => sex === animal.sex).length;
+    return result.residents.filter(({ sex }) => sex === animal.sex).length;
   }
-  return residents.length;
+  return result.residents.length;
 };
-
-console.log(countAnimals({ species: 'giraffes' }));
 
 module.exports = countAnimals;
