@@ -22,7 +22,7 @@ describe('Testes da função HandlerElephants', () => {
   it('Verificando retorno da função sem parâmetros', () => {
     expect(handlerElephants()).toBe(undefined);
   });
-  it('Verificando retorno da função com o parâmetro {}', () => {
+  it('Verificando retorno da função com o parâmetro !string', () => {
     expect(handlerElephants(1)).toBe('Parâmetro inválido, é necessário uma string');
   });
   it('Verificando retorno da função com o parâmetro " "', () => {
